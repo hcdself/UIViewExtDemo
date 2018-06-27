@@ -20,6 +20,9 @@
 		BA67A83D20BD377200FC13C6 /* UIImage+ScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BA67A83C20BD377200FC13C6 /* UIImage+ScaleImage.m */; };
 		BA67A84320BD385C00FC13C6 /* UIWebView+HCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BA67A84220BD385C00FC13C6 /* UIWebView+HCategory.m */; };
 		BA67A84620BD38D000FC13C6 /* UIImage+HCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BA67A84520BD38D000FC13C6 /* UIImage+HCategory.m */; };
+		BAC8150F20E36E470066003C /* NSObject+PerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8150920E36E460066003C /* NSObject+PerformSelector.m */; };
+		BAC8151020E36E470066003C /* NSTimer+HCDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8150D20E36E470066003C /* NSTimer+HCDCategory.m */; };
+		BAC8151120E36E470066003C /* HCDNSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC8150E20E36E470066003C /* HCDNSProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		BA67A84220BD385C00FC13C6 /* UIWebView+HCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+HCategory.m"; sourceTree = "<group>"; };
 		BA67A84420BD38D000FC13C6 /* UIImage+HCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HCategory.h"; sourceTree = "<group>"; };
 		BA67A84520BD38D000FC13C6 /* UIImage+HCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HCategory.m"; sourceTree = "<group>"; };
+		BAC8150920E36E460066003C /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
+		BAC8150A20E36E460066003C /* HCDNSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDNSProxy.h; sourceTree = "<group>"; };
+		BAC8150B20E36E460066003C /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
+		BAC8150C20E36E460066003C /* NSTimer+HCDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HCDCategory.h"; sourceTree = "<group>"; };
+		BAC8150D20E36E470066003C /* NSTimer+HCDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HCDCategory.m"; sourceTree = "<group>"; };
+		BAC8150E20E36E470066003C /* HCDNSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDNSProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,7 @@
 		BA67A7FB20BD2BD200FC13C6 /* UIViewExtDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BAC8151420E36E9A0066003C /* SubClass */,
 				BA67A82E20BD2C2100FC13C6 /* Category */,
 				BA67A7FC20BD2BD200FC13C6 /* AppDelegate.h */,
 				BA67A7FD20BD2BD200FC13C6 /* AppDelegate.m */,
@@ -151,6 +161,8 @@
 		BA67A82E20BD2C2100FC13C6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				BAC8151320E36E6C0066003C /* NSObject */,
+				BAC8151220E36E580066003C /* NSTimer */,
 				BA67A83620BD368500FC13C6 /* UIWebView */,
 				BA67A83520BD366800FC13C6 /* UIImage */,
 				BA67A83420BD364400FC13C6 /* UIView */,
@@ -211,6 +223,33 @@
 			children = (
 			);
 			path = "UIView+HCategory";
+			sourceTree = "<group>";
+		};
+		BAC8151220E36E580066003C /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				BAC8150C20E36E460066003C /* NSTimer+HCDCategory.h */,
+				BAC8150D20E36E470066003C /* NSTimer+HCDCategory.m */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		BAC8151320E36E6C0066003C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				BAC8150B20E36E460066003C /* NSObject+PerformSelector.h */,
+				BAC8150920E36E460066003C /* NSObject+PerformSelector.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		BAC8151420E36E9A0066003C /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				BAC8150A20E36E460066003C /* HCDNSProxy.h */,
+				BAC8150E20E36E470066003C /* HCDNSProxy.m */,
+			);
+			path = SubClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,11 +385,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC8151020E36E470066003C /* NSTimer+HCDCategory.m in Sources */,
 				BA67A84620BD38D000FC13C6 /* UIImage+HCategory.m in Sources */,
 				BA67A83920BD369F00FC13C6 /* UIWebView+JavaScriptAlert.m in Sources */,
 				BA67A84320BD385C00FC13C6 /* UIWebView+HCategory.m in Sources */,
 				BA67A80120BD2BD200FC13C6 /* ViewController.m in Sources */,
+				BAC8150F20E36E470066003C /* NSObject+PerformSelector.m in Sources */,
 				BA67A80C20BD2BD200FC13C6 /* main.m in Sources */,
+				BAC8151120E36E470066003C /* HCDNSProxy.m in Sources */,
 				BA67A7FE20BD2BD200FC13C6 /* AppDelegate.m in Sources */,
 				BA67A83D20BD377200FC13C6 /* UIImage+ScaleImage.m in Sources */,
 				BA67A83320BD2D1300FC13C6 /* UIView+HCategory.m in Sources */,
