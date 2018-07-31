@@ -173,7 +173,6 @@
 		BA67A83420BD364400FC13C6 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				BA67A84020BD382000FC13C6 /* UIView+HCategory */,
 				BA67A83120BD2D1300FC13C6 /* UIView+HCategory.h */,
 				BA67A83220BD2D1300FC13C6 /* UIView+HCategory.m */,
 			);
@@ -216,13 +215,6 @@
 				BA67A83C20BD377200FC13C6 /* UIImage+ScaleImage.m */,
 			);
 			path = "UIImage+ScaleImage";
-			sourceTree = "<group>";
-		};
-		BA67A84020BD382000FC13C6 /* UIView+HCategory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "UIView+HCategory";
 			sourceTree = "<group>";
 		};
 		BAC8151220E36E580066003C /* NSTimer */ = {
