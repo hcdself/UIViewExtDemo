@@ -17,9 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
     NSLog(@"hello world");
+    
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
 
 
 @end
