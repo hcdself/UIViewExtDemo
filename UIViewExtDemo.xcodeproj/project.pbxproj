@@ -131,6 +131,7 @@
 		BA67A7FB20BD2BD200FC13C6 /* UIViewExtDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BAD224342176D12E003F9D99 /* PCH */,
 				BAC8151420E36E9A0066003C /* SubClass */,
 				BA67A82E20BD2C2100FC13C6 /* Category */,
 				BA67A7FC20BD2BD200FC13C6 /* AppDelegate.h */,
@@ -268,6 +269,13 @@
 				BAC8150E20E36E470066003C /* HCDNSProxy.m */,
 			);
 			path = SubClass;
+			sourceTree = "<group>";
+		};
+		BAD224342176D12E003F9D99 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PCH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
