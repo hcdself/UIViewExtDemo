@@ -75,6 +75,9 @@
 		BAA39F2921106CF2008115F8 /* NSArray+HCDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HCDCategory.h"; sourceTree = "<group>"; };
 		BAA39F2B21106CF8008115F8 /* NSDictionary+HCDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HCDCategory.h"; sourceTree = "<group>"; };
 		BAA39F2C21106CF9008115F8 /* NSDictionary+HCDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HCDCategory.m"; sourceTree = "<group>"; };
+		BAAF81BF21782ED20005445B /* HCDMacroFit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDMacroFit.h; sourceTree = "<group>"; };
+		BAAF81C32178918E0005445B /* HCDMacroNeddCombinate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDMacroNeddCombinate.h; sourceTree = "<group>"; };
+		BAAF81C4217894BF0005445B /* HCDMacroStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDMacroStorage.h; sourceTree = "<group>"; };
 		BAC8150920E36E460066003C /* NSObject+PerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformSelector.m"; sourceTree = "<group>"; };
 		BAC8150A20E36E460066003C /* HCDNSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDNSProxy.h; sourceTree = "<group>"; };
 		BAC8150B20E36E460066003C /* NSObject+PerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformSelector.h"; sourceTree = "<group>"; };
@@ -304,6 +307,9 @@
 				BAD2244F217706FE003F9D99 /* HCDMacroThread.h */,
 				BAD2245021770850003F9D99 /* HCDMacroConvert.h */,
 				BAD2245121771C58003F9D99 /* kMacroUI.h */,
+				BAAF81BF21782ED20005445B /* HCDMacroFit.h */,
+				BAAF81C32178918E0005445B /* HCDMacroNeddCombinate.h */,
+				BAAF81C4217894BF0005445B /* HCDMacroStorage.h */,
 			);
 			path = HCDCommon;
 			sourceTree = "<group>";

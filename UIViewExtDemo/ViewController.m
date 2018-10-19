@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PCH/HCDCommon/HCDMacroNeddCombinate.h"
 
 @interface ViewController ()
 
@@ -17,14 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [UIApplication sharedApplication].statusBarHidden = NO;
     
-    NSLog(@"hello world");
+    NSLog(@"rect4--%@",NSStringFromCGRect([UIApplication sharedApplication].statusBarFrame));
+    
+    NSLog(@"布局尺寸:%@",NSStringFromUIEdgeInsets(UIEdgeInsetsMake(kSafeTop, kSafeLeft, kSafeBottom, kSafeRight)));
+    
     
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+}
 - (BOOL)prefersStatusBarHidden {
     return NO;
 }
-
 
 @end

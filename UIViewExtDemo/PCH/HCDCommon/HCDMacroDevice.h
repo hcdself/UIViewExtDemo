@@ -52,6 +52,22 @@
 #define kipadSize105 CGSizeEqualToSize(CGSizeMake(834, 1112), CGSizeMake(kNativeWidth,kNativeHeight))
 #define kipadSize129 CGSizeEqualToSize(CGSizeMake(1024, 1336), CGSizeMake(kNativeWidth,kNativeHeight))
 
+//判断是否为刘海屏，矩形屏幕的底部安全距离为0，而刘海屏不为0
+#define kIsIphoneXScreen \
+^(){\
+    BOOL isiPhoneXScreen = NO;\
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {\
+    return isiPhoneXScreen;\
+    }\
+    if (@available(iOS 11.0, *)) {\
+    UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];\
+    if (mainWindow.safeAreaInsets.bottom > 0.0) {\
+    isiPhoneXScreen = YES;\
+    }\
+    }\
+    return isiPhoneXScreen;\
+}()
+
 /**ios版本判断*/
 
 //检查系统版本

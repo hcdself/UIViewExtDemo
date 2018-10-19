@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
-
+#import "ViewController.h"
+#import "PCH/HCDCommon/HCDMacroNeddCombinate.h"
 
 @interface AppDelegate ()
 
@@ -20,29 +20,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     //NSLog(@"%s",__func__,__LINE__,__FILE__);
+
+    [UIApplication sharedApplication].statusBarHidden = YES;
+//
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    
+//
+//    UIViewController *ctr = [[ViewController alloc] init];
+//    self.window.rootViewController = ctr;
+
+    UIEdgeInsets edg = [UIApplication sharedApplication].delegate.window.safeAreaInsets;
+    NSLog(@"1safeAreaInsets--%@",NSStringFromUIEdgeInsets(edg));
+    NSLog(@"2safeAreaInsets--%@",NSStringFromUIEdgeInsets(kSafeAreaInsets));
+    NSLog(@"刘海屏:%d",kIsIphoneXScreen);
+    NSLog(@"rect3--%@",NSStringFromCGRect([UIApplication sharedApplication].statusBarFrame));
     
-    [UIApplication sharedApplication].statusBarHidden = NO;
-    [UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale;
-    [UIScreen mainScreen].nativeBounds.size.height;
     
     
-    
-    CGRect rect = [UIScreen mainScreen].nativeBounds;
-    NSLog(@"rect--%@--%.2f",NSStringFromCGRect(rect),[UIScreen mainScreen].nativeScale);
-    
-    CGSizeEqualToSize(CGSizeMake(320, 480), CGSizeMake(kNativeWidth,kNativeHeight))?:NO;
-    
-    CGSize size =  [UIScreen mainScreen].currentMode.size;
-    NSLog(@"%@--%.2f",NSStringFromCGSize(size),[UIScreen mainScreen].currentMode.pixelAspectRatio);
-    //UIInterfaceOrientationIsPortrait(0);
+    [self.window makeKeyAndVisible];
 
 
-    
 
-    
-    
-    
-    
     
     return YES;
 }

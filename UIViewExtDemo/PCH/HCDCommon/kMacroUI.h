@@ -16,5 +16,4 @@
 [View.layer setBorderWidth:(Width)];\
 [View.layer setBorderColor:[Color CGColor]]
 
-
 #endif /* kMacroUI_h */

@@ -9,20 +9,14 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "HCDCommon/HCDMacroCheck.h"
+//#import "HCDCommon/HCDMacroDevice.h"
+//#import "HCDCommon/HCDMacroSize.h"
+//#import "HCDCommon/HCDMacroNeddCombinate.h"
 
-#import "HCDCommon/HCDMacroThread.h"
-
-#import "HCDCommon/HCDMacroPath.h"
-
-#import "HCDCommon/HCDMacroDevice.h"
-//弱引用/强引用
-#define kWeakSelf(type)   __weak typeof(type) weak##type = type;
-#define kStrongSelf(type) __strong typeof(type) type = weak##type;
-
-//由角度转换弧度
-#define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
-//由弧度转换角度
-#define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
+//以6为标准适配的,如果需要其他标准可以修改
+#define kScreenWidthRatio ((kScreenMinLength)/375)
+#define kScreenHeightRatio ((kScreenMaxLength)/667)
+#define kScaleH(h) ((kScreenMaxLength)/667) * (h)
+#define kScaleW(w) ((kScreenMinLength)/375) * (w)
 
 #endif /* PrefixHeader_pch */

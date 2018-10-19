@@ -9,6 +9,10 @@
 #ifndef HCDMacroObject_h
 #define HCDMacroObject_h
 
+//弱引用/强引用
+#define kWeakSelf(type)   __weak typeof(type) weak##type = type;
+#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+
 //一些缩写
 #define kApplication        [UIApplication sharedApplication]
 #define kKeyWindow          [UIApplication sharedApplication].keyWindow
